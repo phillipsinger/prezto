@@ -43,9 +43,18 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /opt/lo/bin
+  /sbin
   /usr/local/{bin,sbin}
+  /usr/local/share/npm/bin
   $path
 )
+
+# http://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx
+export JAVA_HOME=$(/usr/libexec/java_home)
+export CATALINA_HOME=$(brew --prefix tomcat)/libexec
+export GROOVY_HOME=$(brew --prefix groovy)/libexec
+export MAVEN_OPTS='-Dfile.encoding=UTF-8 -XX:MaxPermSize=2048M -Xmx2048M'
 
 #
 # Less
@@ -74,4 +83,3 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
-
