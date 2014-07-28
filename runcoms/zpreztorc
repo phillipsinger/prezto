@@ -157,13 +157,9 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
-# vesco customizations
-alias bu='brew update'
-alias bo='brew outdated'
-alias bU='brew upgrade && brew cleanup --force'
-alias bs='brew search'
-alias bi='brew info'
+# psinger customizations
 alias lv='ls -lahGF'
+alias ls="ls -G"
 
 # allows pretty printing $ cat myFile.json | json > out.json
 echo " [INFO] Pretty print JSON: $ cat myFile.json | json > out.json"

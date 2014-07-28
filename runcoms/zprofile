@@ -17,9 +17,10 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vi'
+export VISUAL='vi'
 export PAGER='less'
+export SVN_EDITOR="vi"
 
 #
 # Language
@@ -51,7 +52,7 @@ path=(
 )
 
 # http://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 export CATALINA_HOME=$(brew --prefix tomcat)/libexec
 export GROOVY_HOME=$(brew --prefix groovy)/libexec
 export MAVEN_OPTS='-Dfile.encoding=UTF-8 -XX:MaxPermSize=2048M -Xmx2048M'
@@ -83,3 +84,5 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
+
+# [[ -s /Users/psinger/.nvm/nvm.sh ]] && . /Users/psinger/.nvm/nvm.sh # This loads NVM
