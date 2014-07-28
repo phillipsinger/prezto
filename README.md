@@ -31,6 +31,8 @@ version is 4.3.11.
 
         chsh -s /bin/zsh
 
+  5. Fike says, _"If using iTerm, be sure to set `Prefs` -> `Profiles` -> `Terminal` -> `Report Terminal Type` and set it to `xterm-256color`"_
+
   5. Open a new Zsh terminal window or tab.
 
 ### Troubleshooting
@@ -114,4 +116,3 @@ SOFTWARE.
 [6]: http://gitref.org
 [7]: http://www.bash2zsh.com/zsh_refcard/refcard.pdf
 [8]: http://grml.org/zsh/zsh-lovers.html
-
