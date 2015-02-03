@@ -52,10 +52,11 @@ path=(
 )
 
 # http://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export CATALINA_HOME=$(brew --prefix tomcat)/libexec
 export GROOVY_HOME=$(brew --prefix groovy)/libexec
 export MAVEN_OPTS='-Dfile.encoding=UTF-8 -XX:MaxPermSize=2048M -Xmx2048M'
+#export MAVEN_OPTS='-javaagent:/Users/psinger/jrebel/jrebel.jar -Dfile.encoding=UTF-8 -XX:MaxPermSize=2048M -Xmx2048M'
 
 #
 # Less
