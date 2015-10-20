@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 unalias run-help
 autoload run-help
-HELPDIR=/usr/local/share/zsh/helpfiles
+HELPDIR=/usr/local/share/zsh/help
 #setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 unsetopt SHARE_HISTORY
